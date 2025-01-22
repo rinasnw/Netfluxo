@@ -8,13 +8,13 @@
     </head>
 
     <body>
-        <form>
+        <form id="caixa">
             <div>
                 <h1 id="titulo-entrar"> 
                     Entrar
                 </h1>
-                <input class="caixa-cinza" id="input-mail" type="text" placeholder="Email ou número de celular">
-                <input class="caixa-cinza" id="input-senha" type="password" placeholder="Senha">
+                <input class="caixa-cinza" type="text" placeholder="Email ou número de celular">
+                <input class="caixa-cinza" type="password" placeholder="Senha">
                 <button id="botao-entrar" type="submit">
                     Entrar
                 </button>
@@ -25,16 +25,13 @@
                 <a class="link-branco" id="esqueceu-senha" href="url">
                     Esqueceu a senha?
                 </a>
-                <input type="checkbox" id="lembrar" name="lembrar">
-                <label for="lembrar"> 
-                    Lembre-se de mim
-                </label>
-                <p id="novo">
-                    Novo por aqui? 
-                </p>
-                <a class="link-branco" id="assine" href="url">
-                    Assine agora
-                </a>
+                <p id="lembre-se">
+                    <input type="checkbox"> Lembre-se de mim
+                </p>   
+                    <p id="novo">
+                        Novo por aqui?
+                        <a class="link-branco" id="assine" href="url">Assine agora</a>
+                    </p>
             </div>
         </form>
     </body>
