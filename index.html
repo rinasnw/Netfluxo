@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
         <meta charset="UTF-8">
         <title>Netfluxo</title>
     </head>
+
     <body>
         <form>
-            <h1>Entrar</h1>
-            <input type="text" placeholder="Email ou número de celular">
             <div>
-            <input type="password" placeholder="Senha">
+                <h1 id="titulo-entrar"> 
+                    Entrar
+                </h1>
+                <input class="caixa-cinza" id="input-mail" type="text" placeholder="Email ou número de celular">
+                <input class="caixa-cinza" id="input-senha" type="password" placeholder="Senha">
+                <button id="botao-entrar" type="submit">
+                    Entrar
+                </button>
+                <p id="ou">
+                        OU
+                </p>
+                <input id="botao-cod" type="button" value="Usar um código de acesso">
+                <a class="link-branco" id="esqueceu-senha" href="url">
+                    Esqueceu a senha?
+                </a>
+                <input type="checkbox" id="lembrar" name="lembrar">
+                <label for="lembrar"> 
+                    Lembre-se de mim
+                </label>
+                <p id="novo">
+                    Novo por aqui? 
+                </p>
+                <a class="link-branco" id="assine" href="url">
+                    Assine agora
+                </a>
             </div>
-            <button type="submit">Entrar</button>
-            <div>
-                <p>OU</p>
-            </div>
-            <input type="button" value="Usar um código de acesso">
-            <div>
-            <a href="url">Esqueceu a senha?</a>
-            </div>
-            <div>
-            <input type="checkbox" id="lembrar" name="lembrar">
-            <label for="lembrar"> Lembre-se de mim</label><br>
-            </div>
-            <p>Novo por aqui?  
-            <a href="url">Assine agora</a> </p>
-
         </form>
-
     </body>
 
     <footer class="footer">
-
-        <p>Dúvidas? Ligue 0000 000 0000</p> 
-        <a href="url">Perguntas frequentes</a>
-        <a href="url">Preferências de cookies</a>
-        <a href="url">Central de ajuda</a>
-        <a href="url">Informações corporativas</a>
-        <a href="url">Termos de uso</a>
-        <a href="url">Privacidade</a>
         <div>
-        <select name="linguagens">
+            <p id="ligue">
+                Dúvidas? Ligue 0000 000 0000
+            </p> 
+            <a class="link-cinza" href="url">
+                Perguntas frequentes
+            </a>
+            <a class="link-cinza" href="url">
+                Preferências de cookies
+            </a>
+            <a class="link-cinza" href="url">
+                Central de ajuda
+            </a>
+            <a class="link-cinza" href="url">
+                Informações corporativas
+            </a>
+            <a class="link-cinza" href="url">
+                Termos de uso
+            </a>
+            <a class="link-cinza" href="url">
+                Privacidade
+            </a>
+        </div>
+        <div>
+        <select id="linguagens" name="linguagens">
             <option value="Português">Português</option>
             <option value="Inglês">Inglês</option>
             <option value="Espanhol">Espanhol</option>
