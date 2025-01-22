@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 850px;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
 }
@@ -50,8 +50,8 @@ body::before {
     width: 100%;
     padding: 9px;
     margin: 10px 0;
-    border:1;
-    border-color: #ffffff;
+    border-color: #494848;
+    border-style: solid;
     border-radius: 2px;
     font-size: 16px;
     background: #333;
@@ -87,7 +87,7 @@ body::before {
 
 #botao-cod {
     width: 100%;
-    padding: 10px;
+    padding: 2px;
     margin: 10px 0;
     border: none;
     border-radius: 1px;
@@ -116,7 +116,7 @@ body::before {
     color: #fff;
     text-decoration: none;
     font-family: 'kadwa';
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 100;
 }
 
@@ -140,10 +140,10 @@ body::before {
     
   }
 
-footer {
+  .footer {
     background-color: #000000;
     color: white;
-    padding: 30px;
+    padding: 40px;
     position: relative;
     margin-top: 240px;
     bottom: 0;
@@ -151,4 +151,37 @@ footer {
     font-family: 'kadwa';
     font-size: 15px;
     font-weight: 100;
+    color: #494949;
+
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+#ligue {
+    margin-bottom: 1px;
+}
+
+.linha-1, .linha-2 {
+    display: flex; /* Flexbox para alinhar os links em linha */
+    gap:300px; /* Espaçamento entre os links */
+}
+
+.link-cinza1, .link-cinza2 {
+    color: #494949;
+    font-size: 14px;
+}
+
+.link-cinza1:hover, .link-cinza2:hover {
+    color: #ffffff;
+}
+
+#linguagens {
+    margin-top: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    font-family: 'kadwa';
+    font-weight: 100;
+    font-size: 15px;
 }
