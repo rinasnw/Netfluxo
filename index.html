@@ -2,49 +2,71 @@
 <html lang="pt-br">
 
     <head>
+        <!-- links para importar fontes -->
         <link href='https://fonts.googleapis.com/css?family=Kadwa' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        <!-- link para importar o arquivo css -->
         <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+        <!-- define a codificação -->
         <meta charset="UTF-8">
-        <img>
-            <img src="imagem/netfluxologo.jpeg" width="250px"
-            style="margin-left: 20px; margin-top: 20px;">
+        <!-- imagem do logo da com especificações -->
+        <img src="imagem/netfluxologo.jpeg" width="250px" style="margin-left: 20px; margin-top: 20px;">
+        <!-- titulo -->
         <title>Netfluxo</title>
+
     </head>
 
     <body>
+        <!-- formulario de login com id "caixa" -->
         <form id="caixa">
             <div>
+                <!-- titulo da seção de login -->
                 <h1 id="titulo-entrar"> 
                     Entrar
                 </h1>
+                
+                <!-- campo de texto -->
                 <input class="caixa-cinza" type="text" placeholder="Email ou número de celular">
                 <input class="caixa-cinza" type="password" placeholder="Senha">
+                
+                <!-- botão de envio do formulário -->
                 <button id="botao-entrar" type="submit">
                     Entrar
                 </button>
+
                 <p id="ou">
                         OU
                 </p>
+                
+                <!-- botão do codigo de acesso -->
                 <input id="botao-cod" type="button" value="Usar um código de acesso">
+                
+                <!-- link para recuperação de senha -->
                 <a class="link-branco" id="esqueceu-senha" href="url">
                     Esqueceu a senha?
                 </a>
+                
+                <!-- opção para o usuário marcar -->
                 <p id="lembre-se">
                     <input type="checkbox"> Lembre-se de mim
                 </p>   
-                    <p id="novo">
-                        Novo por aqui?
-                        <a class="link-branco" id="assine" href="url">Assine agora</a>
-                    </p>
+                
+                <!-- opção para usuários se inscreverem -->
+                <p id="novo">
+                    Novo por aqui?
+                    <a class="link-branco" id="assine" href="url">Assine agora</a>
+                </p>
             </div>
         </form>
     </body>
 
+    <!-- rodapé da pagina -->
     <footer class="footer">
         <p id="ligue">
             Dúvidas? Ligue 0000 000 0000
         </p> 
+        
+        <!-- primeira linha de links -->
         <div class="linha-1">
             <a class="link-cinza1" href="url">
                 Perguntas frequentes
@@ -59,6 +81,8 @@
                 Privacidade
             </a>
         </div>
+        
+        <!-- segunda linha de links -->
         <div class="linha-2">
             <a class="link-cinza2" href="url">
                 Preferências de cookies
@@ -67,6 +91,8 @@
                 Informações corporativas
             </a>
         </div>
+        
+        <!-- seletor de idiomas -->
         <div>
         <select id="linguagens" name="linguagens">
             <option value="Português">Português</option>
