@@ -1,192 +1,205 @@
+/* para todos os elementos da pagina */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
-
+/* define o estilo para o corpo da pagina */
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 850px;
+    min-height: 850px; /* define a altura mínima do corpo */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* organiza os itens do layout na direção de coluna */
 }
 
+/* aplica um efeito de fundo fixo no corpo da pagina */
 body::before {
-    content: '';
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
-    url("imagem/fluxotime.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%) brightness(50%); 
-    z-index: -1;
+    content: ''; 
+    position: fixed; /* fixa o fundo no topo da pagina */
+    width: 100%; /* largura */
+    height: 100%; /* altura */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("imagem/fluxotime.jpeg"); /* gradiente de cor e imagem de fundo */
+    background-size: cover; /* cobre toda a area da tela */
+    background-position: center; /* centraliza */
+    background-repeat: no-repeat; /* sem repetição da imagem */
+    filter: grayscale(100%) brightness(50%); /* aplica filtro e brilho */
+    z-index: -1; /* coloca o fundo atrás de todos os outros elementos */
 }
 
+/* estilo para o formulario de login */
 #caixa {
     background: rgba(0, 0, 0, 0.6); 
-    padding: 30px;
-    border-radius: 2px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 30px; /* preenchimento interno */
+    border-radius: 2px; /* bordas arredondadas */
     width: 400px; 
-    height: 525px;
-    margin: 50px auto; 
+    height: 525px; 
+    margin: 50px auto; /* centraliza com margem automatica */
 }
 
+/* estilo do título "entrar" */
 #titulo-entrar {   
-    text-align: start;
-    font-size: 25px;
-    font-weight: 100;
-    margin-bottom: 20px;
-    color: #ffffff; 
-    font-family: 'ABeeZee';
+    text-align: start; /* alinhamento no começo */
+    font-size: 25px; /* tamanho fonte */
+    font-weight: 100; /* espessura fonte */
+    margin-bottom: 20px; /* espaço em baixo do titulo */
+    color: #ffffff; /* cor texto */
+    font-family: 'ABeeZee'; /* fonte personalizada */
 }
 
-.caixa-cinza{ 
-    width: 100%;
+/* estilo para os campos de texto e senha */
+.caixa-cinza { 
+    width: 100%; 
     padding: 9px;
-    margin: 10px 0;
-    border-color: #494848;
-    border-style: solid;
-    border-radius: 2px;
-    font-size: 16px;
-    background: #333;
-    color: #fff;
-    font-family: 'kadwa';
-    font-weight: 100;
+    margin: 10px 0; 
+    border-color: #494848; /* cor borda */
+    border-style: solid; /* borda solida */
+    border-radius: 2px; /* bordas arredondadas */
+    font-size: 16px; /* tamanho fonte */
+    background: #333; /* fundo */
+    color: #fff; /* cor texto */
+    font-family: 'kadwa'; /* fonte personalizada */
+    font-weight: 100; /* espessura da fonte */
 }
 
+/* estilo para o botão de login */
 #botao-entrar {
-    background: #ff6600;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
+    background: #ff6600; /* fundo laranja */
+    color: #fff; /* cor texto*/
+    cursor: pointer; /* mostra o cursor de pointer ao passar por cima */
     width: 100%;
-    padding: 2px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 1px;
-    font-size: 16px;
-    font-family: 'kadwa';
-    font-weight: 100;
+    padding: 2px; 
+    margin: 10px 0; 
+    border: none; 
+    border-radius: 2px;
+    font-size: 16px; 
+    font-family: 'kadwa'; 
+    font-weight: 100; 
 }
 
+/* estilo para o botão de login ao passar o mouse (hover) */
 #botao-entrar:hover {
-    background: #e05500;
+    background: #e05500; /* altera o fundo para outra cor */
 }
 
+/* estilo para o texto */
 #ou {
-    color: #7c7c7c;
-    text-align: center;
-    font-family: 'kadwa';
+    color: #7c7c7c; 
+    text-align: center; 
+    font-family: 'kadwa'; 
 }
 
+/* estilo para o botão de código de acesso */
 #botao-cod {
-    width: 100%;
+    width: 100%; 
     padding: 2px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 1px;
-    font-size: 14px;
-    background: rgba(47, 46, 46, 0.7); 
-    color: #fff;
-    cursor: pointer;
-    font-family: 'kadwa';
-    font-weight: 100;
+    margin: 10px 0; 
+    border: none; 
+    border-radius: 1px; 
+    font-size: 14px; 
+    background: rgba(47, 46, 46, 0.7); /* fundo escuro e semitransparente */
+    color: #fff; /* texto branco */
+    cursor: pointer; /* cursor de pointer ao passar por cima */
+    font-family: 'kadwa'; /* fonte personalizada */
+    font-weight: 100; 
 }
 
+/* estilo para o botão de código de acesso ao passar o mouse (hover) */
 #botao-cod:hover {
-    background: #555;
+    background: #555; /* altera o fundo para uma cor mais clara */
 }
 
+/* estilo para o link de "Esqueceu a senha?" */
 #esqueceu-senha {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    text-align: center;
-    font-family: 'kadwa';
-    font-size: 15px;
-    font-weight: 100;
+    margin-top: 8px; /* margem superior */
+    margin-bottom: 8px; /* margem inferior */
+    text-align: center; /* centralizar */
+    font-family: 'kadwa'; /* fonte */
+    font-size: 15px; /* tamanho */
+    font-weight: 100; 
 }
 
-.link-branco{
+/* estilo para os links com a classe "link-branco" */
+.link-branco {
     color: #fff;
-    text-decoration: none;
-    font-family: 'kadwa';
-    font-size: 14px;
-    font-weight: 100;
+    text-decoration: none; 
+    font-family: 'kadwa'; 
+    font-size: 14px; 
+    font-weight: 100; 
 }
 
+/* estilo para a seção de "Lembre-se de mim" */
 #lembre-se {
-    color: #ffffff;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    color: #ffffff; 
+    margin-top: 8px; 
+    margin-bottom: 8px; 
     font-family: 'kadwa';
-    font-size: 15px;
-    font-weight: 100;
-  }
-  
-
- #novo{
-    color: #494949;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    font-family: 'kadwa';
-    font-size: 15px;
-    font-weight: 100;
-    
-  }
-
-  .footer {
-    background-color: #000000;
-    color: white;
-    padding: 40px;
-    position: relative;
-    margin-top: 240px;
-    bottom: 0;
-    left: 0;
-    font-family: 'kadwa';
-    font-size: 15px;
-    font-weight: 100;
-    color: #494949;
-
-    display: flex;
-    flex-direction: column; 
-    gap: 10px; 
+    font-size: 15px; 
+    font-weight: 100; 
 }
 
+/* estilo para a seção de "Novo por aqui?" */
+#novo {
+    color: #494949; 
+    margin-top: 8px;
+    margin-bottom: 8px; 
+    font-family: 'kadwa'; 
+    font-size: 15px; 
+    font-weight: 100;
+}
+
+/* estilo para o rodapé da página */
+.footer {
+    background-color: #000000; 
+    color: white; 
+    padding: 40px; 
+    position: relative; /* posição relativa para o rodapé */
+    margin-top: 240px; 
+    bottom: 0; /* fixa o rodapé na parte inferior */
+    left: 0; /* fixa o rodapé à esquerda */
+    font-family: 'kadwa'; 
+    font-size: 15px; 
+    font-weight: 100; 
+    color: #494949; 
+    display: flex; /* utiliza flexbox para o layout do rodapé */
+    flex-direction: column; /* organiza os itens do layout na direção de coluna */
+    gap: 10px; /* distância entre os itens */
+}
+
+/* estilo para o texto de duvidas no rodapé */
 #ligue {
-    margin-bottom: 1px;
+    margin-bottom: 1px; /*margem inferior */
 }
 
+/* estilo para a primeira linha de links no rodapé */
 .linha-1 {
     display: flex; 
-    gap:300px; 
+    gap: 300px; 
 }
 
+/* estilo para a segunda linha de links no rodapé */
 .linha-2 {
-    display: flex; 
-    gap:287px; 
+    display: flex;
+    gap: 287px; 
 }
 
+/* estilo para os links */
 .link-cinza1, .link-cinza2 {
-    color: #494949;
-    font-size: 14px;
+    color: #494949; 
+    font-size: 14px; 
 }
 
+/* estilo para os links quando passo o mouse */
 .link-cinza1:hover, .link-cinza2:hover {
-    color: #ffffff;
+    color: #ffffff; 
 }
 
+/* estilo para o seletor de idiomas no rodapé */
 #linguagens {
-    margin-top: 10px;
-    background-color: #000000;
-    color: #fff;
+    margin-top: 10px; 
+    background-color: #000000; 
+    color: #fff; 
     border: none;
-    font-family: 'kadwa';
-    font-weight: 100;
-    font-size: 15px;
+    font-family: 'kadwa'; 
+    font-weight: 100; 
+    font-size: 15px; 
 }
